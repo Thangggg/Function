@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="number">
+<input type="button" value="Feet" onclick="checkFeet()">
+<input type="button" value="Meters" onclick="checkMeters()">
+<p id="result"></p>
+</body>
+<script>
+    function checkFeet() {
+        let number = document.getElementById('number').value;
+            document.getElementById('result').innerHTML = number * 3.279 + " feet"
+    }
+
+    function checkMeters(){
+        let number = document.getElementById('number').value;
+            document.getElementById('result').innerHTML = number * 0.305 + " meter"
+    }
+
+</script>
+</html>

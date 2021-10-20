@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button onclick="check()">Start</button>-->
+<!--<p id="display"></p>-->
+<!--<script>-->
+<!--    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']-->
+<!--    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']-->
+
+<!--        function check(){-->
+<!--            let str = prompt("Hãy Nhập vào tên ngôi sao ")-->
+<!--            let flag = true-->
+<!--            for (let i = 0; i < arr1.length; i++) {-->
+<!--                if (str == arr1[i]){-->
+<!--                    document.getElementById('display').innerHTML = "Sao " + arr1[i] + " thuộc chòm sao " + arr2[i];-->
+<!--                    flag = false-->
+<!--                }if (flag == true){-->
+<!--                    document.getElementById('display').innerHTML = " Ngôi sao này không thuộc chòm sao nào"-->
+<!--                }-->
+<!--            }-->
+<!--        }-->
+<!--</script>-->
+
+
+
+<script>
+    let arr = [ 'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' ,'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major' , 'Leo'];
+    let start = prompt("Nhập vào tên ngôi sao");
+    check(start);
+    function check(sao){
+        let flag = true
+        for (let i = 0; i < arr.length; i++) {
+            if (sao === arr[i]){
+                document.write("Ngôi sao này thuộc chòm " + arr2[i])
+                flag = false
+            }
+        }if (flag === true){
+            document.write(" Ngôi sao này không thuộc chòm sao nào")
+        }
+    }
+</script>
+</body>
+</html>
