@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let start = +prompt("Nhập vào số để tính giai thừa");
+    fact(start)
+    function fact(num) {
+        if(num == 0) {
+            return 1;
+        }
+        if(num < 0 ) {
+            return -1;
+        }
+        for(let i = num; --i; ) {
+            num = num * i;
+        }
+        document.write(num);
+    }
+
+
+</script>
+</body>
+</html>
